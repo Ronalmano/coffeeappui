@@ -1,3 +1,4 @@
+import 'package:coffeeappui/pages/details_page.dart';
 import 'package:coffeeappui/util/coffee_text.dart';
 import 'package:coffeeappui/util/coffee_tile.dart';
 import 'package:flutter/material.dart';
@@ -126,18 +127,50 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: const [
-                CoffeeTile(
-                  imagePath:
-                      "lib/images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg",
-                  amount: '250',
-                  coffeeName: "Cappucino",
+              children: [
+                GestureDetector(
+                  onTap: () {},
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CoffeeDetail(
+                            image:
+                                "lib/images/nathan-dumlao-tA90pRfL2gM-unsplash.jpg",
+                            name: "Cappacino",
+                            price: "250",
+                          ),
+                        ),
+                      );
+                    },
+                    child: CoffeeTile(
+                      imagePath:
+                          "lib/images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg",
+                      amount: '250',
+                      coffeeName: "Cappucino",
+                    ),
+                  ),
                 ),
-                CoffeeTile(
-                  imagePath:
-                      "lib/images/nathan-dumlao-tA90pRfL2gM-unsplash.jpg",
-                  amount: '350',
-                  coffeeName: "Latte",
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CoffeeDetail(
+                          image: "lib/images/latte.jpeg",
+                          name: "Latte",
+                          price: "250",
+                        ),
+                      ),
+                    );
+                  },
+                  child: CoffeeTile(
+                    imagePath:
+                        "lib/images/nathan-dumlao-tA90pRfL2gM-unsplash.jpg",
+                    amount: '350',
+                    coffeeName: "Latte",
+                  ),
                 ),
               ],
             ),
