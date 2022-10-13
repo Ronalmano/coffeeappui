@@ -1,6 +1,6 @@
 # coffeeappui
 
-A new Flutter project.
+A new Flutter project. About clonning a dribble coffee app design
 
 ## Getting Started
 
