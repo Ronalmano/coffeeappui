@@ -4,7 +4,7 @@ A new Flutter project. About clonning a dribble coffee app design with flutter
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a UI render of coffee app UI
 
 A few resources to get you started if this is your first Flutter project:
 
