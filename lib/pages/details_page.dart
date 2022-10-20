@@ -17,6 +17,7 @@ class CoffeeDetail extends StatefulWidget {
 
 class _CoffeeDetailState extends State<CoffeeDetail> {
   int selectedIndex = 0;
+  // Size options
   List<String> size = [
     'S',
     'M',
